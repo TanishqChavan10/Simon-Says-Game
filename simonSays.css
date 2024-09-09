@@ -1,0 +1,101 @@
+/* Overall body styling */
+body {
+    text-align: center;
+    background-image: url('https://example.com/mild-background.jpg'); /* Add a soft background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the buttons */
+.btn {
+    height: 150px;  /* Reduced size for better spacing */
+    width: 150px;
+    border-radius: 50%;
+    border: 8px solid #333;  /* Softer border */
+    margin: 1.25rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Adds depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;  /* Add text inside buttons (optional) */
+    color: white;
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Colors for each button */
+.yellow {
+    background-color: #FAD02E;  /* Slightly brighter and more vibrant */
+}
+
+.red {
+    background-color: #E74C3C;  /* Vibrant red */
+}
+
+.purple {
+    background-color: #8E44AD;  /* Soft purple */
+}
+
+.green {
+    background-color: #27AE60;  /* Cool green */
+}
+
+/* Flash effects */
+.flash {
+    background-color: #f1f1f1 !important;
+}
+
+.userFlash {
+    background-color: lightgreen !important;
+}
+
+/* Container for buttons */
+.btn-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;  /* Adjusts layout for smaller screens */
+    margin: 2rem 0;
+}
+
+/* Styling for the header (score/level display) */
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a box or area for instructions or the game status */
+#game-status {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #666;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 0.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
